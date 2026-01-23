@@ -1,5 +1,3 @@
-# portfolio-chatbot
-
 # Portfolio Chatbot
 
 An AI-powered chatbot for my portfolio website. Visitors can ask questions about my work, background, and services — and get conversational responses.
