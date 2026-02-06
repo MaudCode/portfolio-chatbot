@@ -10,10 +10,10 @@ An AI-powered chatbot for my portfolio website. Visitors can ask questions about
 
 ## How It Works
 ```
-┌─────────────────┐     ┌─────────────────┐     ┌─────────────┐
-│  Framer site    │────▶│  Cloudflare     │────▶│  Groq API   │
-│  (chat UI)      │◀────│  Worker         │◀────│  (Llama 3.3)│
-└─────────────────┘     └─────────────────┘     └─────────────┘
+┌─────────────────┐     ┌─────────────────┐     ┌───────────────┐
+│  Framer site    │────▶│  Cloudflare     │────▶│  Groq API     │
+│  (chat UI)      │◀────│  Worker         │◀────│  (Llama 3.3)  │
+└─────────────────┘     └─────────────────┘     └───────────────┘
 ```
 
 1. Visitor types a message in the chat interface
