@@ -2,22 +2,24 @@
 
 An AI-powered chatbot for my portfolio website. Visitors can ask questions about my work, background, and services — and get conversational responses.
 
+Live on maudcrooymans.com, where it goes by Emsie.
+
 ## Tech Stack
 
-- **AI Model**: Llama 3.3 70B (via Groq API)
+- **AI Model**: GPT OSS 120B (via Groq API)
 - **Backend**: Cloudflare Workers
 - **Frontend**: Framer (React code component)
 
 ## How It Works
 ```
-┌─────────────────┐     ┌─────────────────┐     ┌───────────────┐
-│  Framer site    │────▶│  Cloudflare     │────▶│  Groq API     │
-│  (chat UI)      │◀────│  Worker         │◀────│  (Llama 3.3)  │
-└─────────────────┘     └─────────────────┘     └───────────────┘
+┌─────────────────┐     ┌─────────────────┐     ┌────────────────┐
+│  Framer site    │────▶│  Cloudflare     │────▶│  Groq API      │
+│  (chat UI)      │◀────│  Worker         │◀────│  (GPT OSS 120B)│
+└─────────────────┘     └─────────────────┘     └────────────────┘
 ```
 
 1. Visitor types a message in the chat interface
-2. Message is sent to the Cloudflare Worker
+2. The component sends that message plus recent conversation history to the Worker
 3. Worker forwards it to Groq API with a system prompt containing portfolio info
 4. AI response is returned and displayed in the chat
 
@@ -53,3 +55,4 @@ Sign up for a free Groq account at [console.groq.com](https://console.groq.com) 
 ## Author
 
 [Maud Crooymans](https://linkedin.com/in/maud-crooymans)
+
